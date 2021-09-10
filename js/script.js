@@ -1,3 +1,15 @@
+
+var botao = document.querySelector(".botao")
+
+botao.addEventListener("click", msgDepara); 
+
+
+function msgDepara()
+{
+  alert("De Para ainda não esta disponivel, por favor fique de olho no calendario!!")
+}
+
+
 $(document).foundation();
 
 

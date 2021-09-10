@@ -1,71 +1,111 @@
 @charset "UTF-8";
 /*FAETERJ PETROPOLIS-LC+SERRATEC
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+.Faeterj-Periodos li {
+  color: rgb(237, 237, 238);
+}
 
+.Periodo {
+  color: rgb(255, 249, 167);
+}
+
+.dragao {
+  transition: all 0.5s;
+  border: 2px solid #dcdddf;
+  height: 120px;
+}
+.dragao:hover {
+  border: 5px solid #781f40;
+  border-radius: 50%;
+  -webkit-filter: drop-shadow(15px 7px 1px rgba(0, 0, 0, 0.5));
+  filter: drop-shadow(15px 7px 1px rgba(0, 0, 0, 0.5));
+  -webkit-transform: rotateZ(-360deg) scale(1.5);
+  transform: rotateZ(-360deg) scale(1.5);
+}
+
+.img-atletica {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 2em;
+}
 /*CARROSSEL
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-
-
-.carroselFaeterj
-{
+.carroselFaeterj {
   margin-bottom: 0px;
+  border: 3px solid #111111;
   background-color: black;
 }
 
-.galery {
+.galeria {
   width: 100%;
-  height: 290px;
+  height: 400px;
   background-color: black;
   overflow: hidden;
 }
 
-
-.galery .fotos {
+.galeria .fotos {
   width: 500%;
   animation-name: animacao;
   animation-duration: 20s;
   animation-iteration-count: infinite;
-
 }
 
-.galery .fotos img {
+.galeria .fotos img {
   width: 19.9%;
- 
-	/* Move a iamgem dentro do container*/
-		height: 300px;
+
+  height: 400px;
 }
 
 @keyframes animacao {
-    0% { margin-left: 0; }
-    20% { margin-left: 0; }
-    25% { margin-left: -100%; }
-    45% { margin-left: -100%; }
-    50% { margin-left: -200%; }
-    70% { margin-left: -200%; }
-    75% { margin-left: -300%; }
-    85% { margin-left: -300%; }
-    95% { margin-left: -400%; }
-    100% { margin-left: -400%; }
+  0% {
+    margin-left: 0;
+  }
+  20% {
+    margin-left: 0;
+  }
+  25% {
+    margin-left: -100%;
+  }
+  45% {
+    margin-left: -100%;
+  }
+  50% {
+    margin-left: -200%;
+  }
+  70% {
+    margin-left: -200%;
+  }
+  75% {
+    margin-left: -300%;
+  }
+  85% {
+    margin-left: -300%;
+  }
+  93% {
+    margin-left: -400%;
+  }
+  100% {
+    margin-left: -400%;
+  }
 }
 
-
-
+/*NAVBAR
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .logoFaeterj {
-  width: 130px;
-  margin-top: 11px;
+  height: 35px;
+  margin-top: 7px;
 }
 
 .logoAtletica {
-  
- height: 40px;
- object-fit: cover;
- 
+  height: 40px;
+  object-fit: cover;
 }
 
 .menuFaeterj {
   width: 100%;
   background: #333333;
+  padding-bottom: 10px;
 }
 .menuFaeterj .top-bar {
   margin-bottom: 0;
@@ -77,34 +117,340 @@
   margin-bottom: 0;
 }
 
+.top-bar li a {
+  padding-left: 5px;
+  margin-top: 5px;
+}
 
 .side-nav li.divisor {
   border-top: 1px solid;
-  height: 0;
+  height: 55px;
   padding: 0;
+  padding-bottom: 15px;
   list-style: none;
-  border-top-color: white; }
 
-  .top-bar-section > ul > .divisor, .top-bar-section > ul > [role="separator"] {
-    border-bottom: none;
-    border-top: none;
-    border-right: solid 1px #4e4e4e;
-    clear: none;
-    height: 2.8125rem;
-    width: 0; }
+  border-top-color: white;
+}
 
+.top-bar-section > ul > .divisor,
+.top-bar-section > ul > [role="separator"] {
+  margin-right: 15px;
+  border-bottom: none;
+  border-top: none;
+  border-right: solid 1px #4e4e4e;
+  clear: none;
+  height: 55px;
+  width: 20px;
+}
 
+/*card
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 80px;
+  margin-top: 10px;
+}
 
+.container .card {
+  position: relative;
+  min-width: 320px;
+  height: 440px;
+  box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2),
+    inset -5px -5px 15px rgba(255, 255, 255, 0.1),
+    5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  margin: 30px;
+  transition: 0.5s;
+}
 
+.container .card:nth-child(1) .box .content a {
+  background: #2196f3;
+}
 
+.container .card:nth-child(2) .box .content a {
+  background: #e91e63;
+}
 
+.container .card:nth-child(3) .box .content a {
+  background: #23c186;
+}
 
+.container .card .box {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  background: #2a2b2f;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transition: 0.5s;
+  background-image: url(src/faeterj.png);
+}
 
+.container .card .box:hover {
+  transform: translateY(-50px);
+}
 
+.container .card .box:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.03);
+}
 
+.container .card .box .content {
+  padding: 20px;
+  text-align: center;
+}
 
+.container .card .box .content h2 {
+  position: absolute;
+  top: -10px;
+  right: 30px;
+  font-size: 8rem;
+  color: rgba(255, 255, 255, 0.1);
+}
 
+.container .card .box .content h3 {
+  font-size: 1.8rem;
+  color: #fff;
+  z-index: 1;
+  transition: 0.5s;
+  margin-bottom: 15px;
+}
+
+.container .card .box .content p {
+  font-size: 1rem;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.9);
+  z-index: 1;
+  transition: 0.5s;
+}
+
+.container .card .box .content a {
+  position: relative;
+  display: inline-block;
+  padding: 8px 20px;
+  background: black;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+  margin-top: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transition: 0.5s;
+}
+.container .card .box .content a:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+  background: #fff;
+  color: #000;
+}
+
+/*noticias
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.cpti {
+  text-align: center;
+}
+.noticias {
+  background: #232427;
+}
+
+:root {
+  --surface-color: #fff;
+  --curve: 40;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  background: #232427;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin: 2rem 5vw;
+  padding: 0;
+  list-style-type: none;
+}
+
+.card {
+  position: relative;
+  display: block;
+  height: 100%;
+  border-radius: calc(var(--curve) * 1px);
+  overflow: hidden;
+  text-decoration: none;
+}
+
+.card__image {
+  width: 100%;
+  height: auto;
+}
+
+.card__overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  border-radius: calc(var(--curve) * 1px);
+  background-color: var(--surface-color);
+  transform: translateY(100%);
+  transition: 0.2s ease-in-out;
+}
+
+.card:hover .card__overlay {
+  transform: translateY(0);
+}
+
+.card__header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 2em;
+  padding: 2em;
+  border-radius: calc(var(--curve) * 1px) 0 0 0;
+  background-color: var(--surface-color);
+  transform: translateY(-100%);
+  transition: 0.2s ease-in-out;
+}
+
+.card__arc {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  bottom: 100%;
+  right: 0;
+  z-index: 1;
+}
+
+.card__arc path {
+  fill: var(--surface-color);
+  d: path("M 40 80 c 22 0 40 -22 40 -40 v 40 Z");
+}
+
+.card:hover .card__header {
+  transform: translateY(0);
+}
+
+.card__thumb {
+  flex-shrink: 0;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.card__title {
+  font-size: 1em;
+  margin: 0 0 0.3em;
+  color: #6a515e;
+}
+
+.card__tagline {
+  display: block;
+  margin: 1em 0;
+  font-family: "MockFlowFont";
+  font-size: 0.8em;
+  color: #d7bdca;
+}
+
+.card__status {
+  font-size: 0.8em;
+  color: #d7bdca;
+}
+
+.novidades-descricao {
+  padding: 0 2em 2em;
+  margin: 0;
+  color: #a1a1a1;
+  font-family: "MockFlowFont";
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
+
+.Evento-descricao {
+  padding: 0 2em 2em;
+  margin: 0;
+  color: #a1a1a1;
+  font-family: "MockFlowFont";
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
+
+footer {
+  text-align: center;
+  background-color: rgba(24, 20, 20, 0.5);
+  text-transform: uppercase;
+  padding-top: 40px;
+  color: white;
+  margin-top: 100px;
+  background-image: url();
+}
+
+.logoFaeterj2 {
+  width: 200px;
+}
+
+/*
+––––––––––––––PAGINA DE PREMIADO–––––––––––––––––––––––––––––––––––– */
+.premiado {
+  text-align: center;
+}
+
+.conteudo {
+  margin-top: 40px;
+  color: white;
+}
+.foto {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+
+.premio {
+  padding-top: 10px;
+  width: 80%;
+}
+
+.txt {
+  text-align: center;
+  margin-top: 20px;
+  border: 2px solid #dcdddf;
+  border-radius: 10px;
+  color: white;
+  margin-left: 590px;
+  margin-right: 590px;
+  margin-bottom: 50px;
+  background: #2196f3;
+}
+
+.txt a {
+  color: white;
+}
+
+.txt:hover {
+  background-color: #042947;
+}
 
 @font-face {
   font-family: "icomoon";
@@ -153,11 +499,7 @@
 
 /*  STILOS
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-body {
-  background: rgb(255, 255, 255);
-}
 
-body,
 h3 {
   color: white;
 }
@@ -256,11 +598,12 @@ img {
   display: block;
 }
 
-.dt {
+.texto-faeterj {
   margin-top: 50px;
   text-align: center;
   font-size: 2em;
   padding: 0 20px;
+  color: white;
 }
 
 .p {
@@ -269,4 +612,69 @@ img {
   position: fixed;
   bottom: 0;
   width: 100%;
+}
+
+/* CSS DA PAGINA "SOBRE FAETERJ" */
+.conteudo {
+  font-size: 16px;
+  text-align: center;
+  color: white;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.conteudo-faeterj {
+  text-align: center;
+  color: white;
+  margin: 40px 80px;
+  font-size: 18px;
+}
+
+.logoFaeterj3 {
+  float: left;
+
+  padding-left: 20px;
+  height: 200px;
+  margin-top: 25px;
+}
+.texto {
+  text-align: center;
+  color: white;
+}
+
+.mapa {
+  text-align: center;
+}
+
+/* CSS Do rodape" */
+
+.rede-social {
+  margin-right: 20px;
+}
+
+.rede-social li {
+  padding-left: 20px;
+  display: inline;
+}
+
+
+
+.img-desenvolvedor
+{
+  float: center;
+
+}
+
+
+
+.desenvolvedor li 
+{
+  padding-left: 10px;
+  display: inline;
+
+}
+.lucas-esteves
+{
+  margin-top: 50px;
+  margin-left: 40px;
 }
