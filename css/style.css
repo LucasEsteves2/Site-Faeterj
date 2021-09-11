@@ -95,6 +95,23 @@
 .logoFaeterj {
   height: 35px;
   margin-top: 7px;
+  
+
+}
+
+.anima
+
+{
+
+  transition: all 0.5s;
+    cursor: pointer;
+}
+
+
+
+.anima:hover{
+  -webkit-filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+  filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
 }
 
 .logoAtletica {
@@ -409,6 +426,14 @@ footer {
 
 .logoFaeterj2 {
   width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+
+.logoFaeterj2:hover{
+  -webkit-filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+  filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
 }
 
 /*
@@ -427,31 +452,76 @@ footer {
   overflow: hidden;
 }
 
+
+.foto-atletica {
+  width: 100%;
+  height: 400px;
+}
+
+.dragao-faeterj
+{
+width: 250px;
+transition: all 0.5s;
+cursor: pointer;
+}
+
+.dragao-faeterj:hover{
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+}
+
+
+
+
 .premio {
   padding-top: 10px;
   width: 80%;
+
+  transition: all 0.5s;
+  cursor: pointer;
+
+
 }
 
-.txt {
+.premio:hover{
+  -webkit-filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+  filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+}
+
+
+.centralizado
+{
   text-align: center;
-  margin-top: 20px;
-  border: 2px solid #dcdddf;
-  border-radius: 10px;
+}
+
+
+
+.txt {
+  text-align: color;
+  display: inline-block;
+  padding: 8px 25px;
+  background: #3ea8ff;
+  border-radius: 30px;
+  text-decoration: none;
   color: white;
-  margin-left: 590px;
-  margin-right: 590px;
-  margin-bottom: 50px;
-  background: #2196f3;
+  margin-top: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transition: 0.5s;
 }
 
 .txt a {
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 .txt:hover {
-  background-color: #042947;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+  background: rgb(135, 246, 185);
 }
+.txt:hover a 
+{  color: #000;
 
+
+}
 @font-face {
   font-family: "icomoon";
   src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/123941/icomoon_copy.eot");
@@ -655,9 +725,17 @@ img {
 .rede-social li {
   padding-left: 20px;
   display: inline;
+
+  transition: all 0.5s;
+  cursor: pointer;
+
+
 }
 
-
+.rede-social li:hover{
+  -webkit-filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+  filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+}
 
 .img-desenvolvedor
 {
@@ -673,8 +751,55 @@ img {
   display: inline;
 
 }
+.desenvolvedor li img
+
+{
+  padding-top: 12px;
+  width: 23px;
+}
 .lucas-esteves
 {
   margin-top: 50px;
   margin-left: 40px;
+}
+
+/* CSS Da GRADE" */
+
+.grade
+{
+text-align: center;
+margin-bottom: 50px;
+margin-top:0px;
+
+}
+.texto-periodo
+{
+  text-align: center;
+  color: white;
+  margin-top:70px;
+}
+.imgs-periodo
+
+{
+  margin-top:40px
+}
+
+.imgs-periodo li img
+
+{
+  width:880px;
+  height: 700px;
+ 
+  transition: all 0.5s;
+  cursor: pointer;
+
+}
+.imgs-periodo li img:hover{
+  -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+}
+
+.foto-grade {
+  width: 100%;
+  height: 400px;
 }
