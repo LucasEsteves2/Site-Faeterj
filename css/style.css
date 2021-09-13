@@ -414,28 +414,6 @@ body {
   overflow: hidden;
 }
 
-footer {
-  text-align: center;
-  background-color: rgba(24, 20, 20, 0.5);
-  text-transform: uppercase;
-  padding-top: 40px;
-  color: white;
-  margin-top: 100px;
-  background-image: url();
-}
-
-.logoFaeterj2 {
-  width: 200px;
-  transition: all 0.5s;
-  cursor: pointer;
-}
-
-
-.logoFaeterj2:hover{
-  -webkit-filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
-  filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
-}
-
 /*
 ––––––––––––––PAGINA DE PREMIADO–––––––––––––––––––––––––––––––––––– */
 .premiado {
@@ -744,7 +722,6 @@ img {
 }
 
 
-
 .desenvolvedor li 
 {
   padding-left: 10px;
@@ -802,4 +779,95 @@ margin-top:0px;
 .foto-grade {
   width: 100%;
   height: 400px;
+}
+
+
+/* CABEÇALHO- APRENDENDO USAR FLEXBOX*/
+
+footer {
+  text-align: center;
+  background-color: rgba(24, 20, 20, 0.5);
+  text-transform: uppercase;
+  padding-top: 40px;
+  color: white;
+  margin-top: 100px;
+  background-image: url();
+}
+
+.logoFaeterj2 {
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+
+.logoFaeterj2:hover{
+  -webkit-filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+  filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+}
+
+
+
+.rodape-flexbox ul
+{
+ list-style-type: none;
+  list-style: none;}
+
+/* Rede social FAETERJ*/
+
+.redeSocial-flexbox
+{
+  
+display:flex;
+Width:12%;
+align-items: center;
+justify-content: space-around;
+margin-left: 45%;
+
+
+}
+.redeSocial-flexbox li
+{
+  transition: all 0.5s;
+  cursor: pointer;
+ }
+
+
+.redeSocial-flexbox li:hover{
+  -webkit-filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+  filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+}
+
+/* PROGRAMADOR: LUCAS ESTEVES*/
+
+
+.flex-desenvolvedor
+{
+
+  display:flex;
+  width: 31%;
+  align-items: center;
+  justify-content: space-around;
+  margin-left: 37%;
+}
+
+
+.flex-desenvolvedor li
+{
+
+ 
+  
+}
+.flex-desenvolvedor li img
+
+{
+  padding-top: 10px;
+  height: 35px;
+}
+
+.rodape-mapa
+
+{
+  width: 90%;
+  margin-bottom: 10px;
 }
