@@ -1,6 +1,52 @@
 
 /*Usei pra deixar reponsivo
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+
+/*USANDO PARA ANIMAR AS NOTICIAS DA FAETERJ
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+[data-animacaoNoticias]
+{
+  opacity: 0;
+  transition: .3s;
+}
+
+
+[data-animacaoNoticias="esquerda"]
+{
+ transform: translate3d(-50px, 0, 0);
+}
+
+[data-animacaoNoticias="direita"]
+{
+ transform: translate3d(50px, 0, 0);
+}
+
+
+
+
+[data-animacaoNoticias].animar {
+  opacity: 1;
+  transform: translate3d(0px,0px,0px);
+
+}
+
+
+
+
+
+
+
+/*Fim da animação
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+
+
+
 meta.foundation-version {
   font-family: "/5.5.0/"; }
 
@@ -1329,11 +1375,11 @@ button::-moz-focus-inner {
 @media only screen and (min-width: 40.063em) {
   button, .button {
     display: inline-block; } }
-/* Standard Forms */
+ 
 form {
   margin: 0 0 1rem; }
 
-/* Using forms within rows, we need to set some defaults */
+/*  o default das linhas da coluna onde fica os menus (atletica,novidades,depara) etc */
 form .row .row {
   margin: 0 -0.5rem; }
   form .row .row .coluna,
@@ -1355,7 +1401,7 @@ form .row textarea.coluna,
 form .row textarea.colunas {
   padding-left: 0.5rem; }
 
-/* Label Styles */
+
 label {
   font-size: 0.875rem;
   color: #4d4d4d;
@@ -1375,7 +1421,6 @@ label {
     text-transform: capitalize;
     color: #676767; }
 
-/* Attach elements to the beginning or end of an input */
 .prefix,
 .postfix {
   display: block;
@@ -1392,7 +1437,7 @@ label {
   height: 2.3125rem;
   line-height: 2.3125rem; }
 
-/* Adjust padding, alignment and radius if pre/post element is a button */
+/* ajustando o paddin e alinhamento dos btn */
 .postfix.button {
   padding-left: 0;
   padding-right: 0;
@@ -1437,7 +1482,7 @@ label {
   border-bottom-right-radius: 1000px;
   border-top-right-radius: 1000px; }
 
-/* Separate prefix and postfix styles when on span or label so buttons keep their own */
+/* separador */
 span.prefix, label.prefix {
   background: #f2f2f2;
   border-right: none;
@@ -1450,7 +1495,7 @@ span.postfix, label.postfix {
   color: #333333;
   border-color: #cccccc; }
 
-/* We use this to get basic styling on all basic form elements */
+/* formas dos elemtnos*/
 input[type="text"], input[type="password"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="week"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], input[type="color"], textarea {
   -webkit-appearance: none;
   border-radius: 0;
@@ -1548,15 +1593,15 @@ input[type="submit"] {
   -webkit-appearance: none;
   border-radius: 0; }
 
-/* Respect enforced amount of rows for textarea */
+
 textarea[rows] {
   height: auto; }
 
-/* Not allow resize out of parent */
+
 textarea {
   max-width: 100%; }
 
-/* Add height value for select elements to match text input height */
+/* adicionando valor da altura */
 select {
   -webkit-appearance: none !important;
   border-radius: 0;
@@ -6046,7 +6091,7 @@ th.show-for-portrait {
   th.show-for-portrait,
   th.hide-for-landscape {
     display: table-cell !important; } }
-/* Touch-enabled device targeting */
+/* desabilitar o menu da logo da faejter */
 .show-for-touch {
   display: none !important; }
 
@@ -6059,7 +6104,7 @@ th.show-for-portrait {
 .touch .hide-for-touch {
   display: none !important; }
 
-/* Specific visibility for tables */
+/* Visibilidade esecifica faeterj */
 table.hide-for-touch {
   display: table !important; }
 
@@ -6096,7 +6141,7 @@ th.hide-for-touch {
 .touch th.show-for-touch {
   display: table-cell !important; }
 
-/* Print visibility */
+/* Mostrar a visibilidade  */
 @media print {
   .show-for-print {
     display: block; }

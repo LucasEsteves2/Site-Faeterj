@@ -1,6 +1,41 @@
 @charset "UTF-8";
-/*FAETERJ PETROPOLIS-LC+SERRATEC
+/*FAETERJ PETROPOLIS-ESTEVES+SERRATEC
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+/*ANIMANDO COM O SCROOL (JUNHTANDO CM JS)
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+[data-animacao]
+{
+  opacity: 0;
+  transition: .3s;
+}
+
+
+[data-animacao="esquerda"]
+{
+ transform: translate3d(-50px, 0, 0);
+}
+
+[data-animacao="direita"]
+{
+ transform: translate3d(50px, 0, 0);
+}
+
+
+
+
+[data-animacao].animar {
+  opacity: 1;
+  transform: translate3d(0px,0px,0px);
+
+}
+
+/*Fim da animação
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
 .Faeterj-Periodos li {
   color: rgb(237, 237, 238);
 }
@@ -526,7 +561,7 @@ cursor: pointer;
   position: absolute;
   top: 50%;
   transition: all 0.3s ease;
-  /* Better Font Rendering =========== */
+ 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -544,9 +579,6 @@ cursor: pointer;
 .icon-circle-right:before {
   content: "";
 }
-
-/*  STILOS
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 h3 {
   color: white;
@@ -586,8 +618,7 @@ img {
   display: block;
 }
 
-/* DROPDOWN GENERAL STYLES
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
 .m-menu {
   border-top: 1px solid #4e4e4e;
 }
@@ -600,8 +631,6 @@ img {
   opacity: 1;
 }
 
-/* TOP LINKS INSIDE DROPDOWN STYLES
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
 .column li:not(:first-child) a {
   border-top: 1px solid #262626;
 }
@@ -612,8 +641,7 @@ img {
   right: 3px;
 }
 
-/* BOTTOM LINKS INSIDE FIRST DROPDOWN STYLES
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
 .intro .icon-play {
   position: absolute;
   color: rgba(0, 0, 0, 0.4);
@@ -626,8 +654,7 @@ img {
   color: rgba(0, 0, 0, 0.7);
 }
 
-/* TARGET DIV INSIDE SECOND DROPDOWN STYLES
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
 .column > img {
   margin: 1em 0;
 }
@@ -764,16 +791,16 @@ margin-top:0px;
 .imgs-periodo li img
 
 {
-  width:880px;
-  height: 700px;
+  width:700px;
+  height: 500px;
  
   transition: all 0.5s;
   cursor: pointer;
 
 }
 .imgs-periodo li img:hover{
-  -webkit-transform: scale(0.9);
-    transform: scale(0.9);
+  -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 .foto-grade {
@@ -852,12 +879,6 @@ margin-left: 45%;
 }
 
 
-.flex-desenvolvedor li
-{
-
- 
-  
-}
 .flex-desenvolvedor li img
 
 {
@@ -871,3 +892,112 @@ margin-left: 45%;
   width: 90%;
   margin-bottom: 10px;
 }
+
+
+
+
+
+/* Pagina: Noticias*/
+
+
+
+.container-noticias
+{
+ 
+  margin-left: 10%;
+}
+
+.paragrafo1 
+{
+  text-decoration: none;
+	color: blue;
+	margin-top: 10px;
+  font-size: 22px;
+}
+
+
+.noticias-conteudo
+
+{
+  text-decoration: none;
+	color: rgb(255, 255, 255);
+	margin-top: 10px;
+  font-size: 18px;
+}
+
+
+.data-noticia
+
+{
+  justify-content: space-around;
+  display: flex;
+  margin-top: 30px;
+  align-items: center;
+  text-decoration: none;
+	color: rgb(187, 186, 186);
+  font-size: 17px;
+  margin-left: 0px;
+  width: 110px;
+}
+
+
+
+.paragrafo2
+{
+  text-decoration: none;
+	color: red;
+	margin-top: 10px;
+  font-size: 22px;
+}
+
+
+
+
+.container-noticias li
+{
+  font-size: 15px;
+}
+
+
+.container-noticias a
+{
+ color:blue;
+ font-size: 16px;
+}
+
+
+
+.container-noticias-item {
+	text-decoration: none;
+	color: #FFF;
+	margin-top: 10px;
+}
+
+.container-noticias-item {
+	font-size: .9em;
+}
+
+.lista-noticias  {
+	font-weight: 700;
+	font-size: 1.8em;
+	margin: .9em 0;
+	padding-left: .3em;
+	padding-top: .2em;
+	padding-bottom: .2em;
+}
+
+.lista-noticias  + .container-noticias-item {
+	margin-top: 0;
+}
+
+.lista-noticias-novosAlunos { color: #EC6E5A; border-left: 4px solid #EC6E5A; }
+.lista-noticias-horario { color: #AD85BF; border-left: 4px solid #AD85BF; }
+.lista-noticias-trancamento { color: #5EC6F3; border-left: 4px solid #5EC6F3; }
+.lista-noticias-alunos-excedentes { color: #25D285; border-left: 4px solid #25D285; }
+
+
+
+
+
+
+
